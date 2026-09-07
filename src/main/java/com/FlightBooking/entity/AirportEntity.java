@@ -1,0 +1,31 @@
+package com.flightBooking.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+
+public class AirportEntity {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	private Integer id;
+	private String AirportName;
+	private String city;
+	private Long AirportCode;
+	
+}
+
+//entity-->data structure
+//interface-->operations/methods
+//implement-->operation/method logic
+//repo--->database interaction
+//controller-->API request
