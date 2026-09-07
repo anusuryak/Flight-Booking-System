@@ -23,9 +23,3 @@ public class AirportEntity {
 	private Long AirportCode;
 	
 }
-
-//entity-->data structure
-//interface-->operations/methods
-//implement-->operation/method logic
-//repo--->database interaction
-//controller-->API request
